@@ -6,7 +6,7 @@ Refinements for Wikipedia’s [Vector 2022 skin](https://en.wikipedia.org/wiki/W
 
 1. Log in to Wikipedia
 1. Make sure the **Vector (2022)** skin is active in Preferences → Appearance
-1. Copy the [CSS](#css) into your [Special:MyPage/skin.css](https://en.wikipedia.org/wiki/Special:MyPage/skin.css)
+1. Copy the [CSS](#css) into your [Special:MyPage/common.css](https://en.wikipedia.org/wiki/Special:MyPage/common.css)
    - For more information, see [Wikipedia’s Help:User style page](https://en.wikipedia.org/wiki/Help:User_style)
 
 ## Features
