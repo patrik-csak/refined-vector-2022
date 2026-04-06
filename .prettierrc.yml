@@ -1,0 +1,6 @@
+'$schema': https://www.schemastore.org/prettierrc.json
+
+# https://github.com/xojs/xo/tree/v2.0.2#prettier
+bracketSpacing: false
+singleQuote: true
+useTabs: true

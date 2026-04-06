@@ -1,0 +1,44 @@
+{
+  "name": "@patrik-csak/refined-vector-2022",
+  "version": "0.0.0",
+  "description": "Refinements for Wikipedia's Vector 2022 skin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrik-csak/refined-vector-2022.git"
+  },
+  "license": "MIT",
+  "author": "Patrik Csak <p@trikcsak.com> (https://patrikcsak.com)",
+  "type": "module",
+  "scripts": {
+    "docs": "md-magic --file '**/*.md'",
+    "format:check": "pnpm run prettier --check",
+    "format:fix": "pnpm run prettier --write",
+    "lint:check": "pnpm run '/^lint:check:.*/'",
+    "lint:check:eslint": "eslint",
+    "lint:check:stylelint": "pnpm run stylelint",
+    "lint:fix": "pnpm run '/^lint:fix:.*/'",
+    "lint:fix:eslint": "eslint --fix",
+    "lint:fix:stylelint": "pnpm run stylelint --fix",
+    "prettier": "prettier .",
+    "quality:check": "pnpm run '/^(format:check|lint:check)/'",
+    "quality:fix": "pnpm run '/^(format:fix|lint:fix)/'",
+    "stylelint": "stylelint '**/*.css'"
+  },
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "eslint-plugin-package-json": "^0.91.1",
+    "markdown-magic": "^4.8.0",
+    "prettier": "^3.8.1",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "10"
+    }
+  }
+}
