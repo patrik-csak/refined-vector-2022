@@ -1,13 +1,16 @@
 # Refined Vector 2022
 
-Refinements for Wikipedia’s [Vector 2022 skin](https://en.wikipedia.org/wiki/Wikipedia:Vector_2022)
+Refinements for Wikipedia’s
+[Vector 2022 skin](https://en.wikipedia.org/wiki/Wikipedia:Vector_2022)
 
 ## Usage
 
 1. Log in to Wikipedia
 1. Make sure the **Vector (2022)** skin is active in Preferences → Appearance
-1. Copy the [CSS](#css) into your [Special:MyPage/common.css](https://en.wikipedia.org/wiki/Special:MyPage/common.css)
-   - For more information, see [Wikipedia’s Help:User style page](https://en.wikipedia.org/wiki/Help:User_style)
+1. Copy the [CSS](#css) into your
+   [Special:MyPage/common.css](https://en.wikipedia.org/wiki/Special:MyPage/common.css)
+   - For more information, see
+     [Wikipedia’s Help:User style page](https://en.wikipedia.org/wiki/Help:User_style)
 
 ## Features
 
@@ -19,10 +22,12 @@ Refinements for Wikipedia’s [Vector 2022 skin](https://en.wikipedia.org/wiki/W
 
 #### Screenshots
 
+<!-- prettier-ignore-start -->
 | Before | After |
 |---|---|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-unrefined-light.png"><img src="screenshots/fonts-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-refined-light.png"><img src="screenshots/fonts-refined-light.png"></picture> |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-unrefined-light.png"><img src="screenshots/monospace-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-refined-light.png"><img src="screenshots/monospace-refined-light.png"></picture> |
+<!-- prettier-ignore-end -->
 
 ## CSS
 
