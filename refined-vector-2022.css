@@ -68,7 +68,7 @@ samp,
 /* new selectors */
 
 /* body list items font: serif */
-.mw-body-content li:not(.infobox li) {
+.mw-body-content li:not(.infobox li, .navbox li) {
 	font-family: var(--font-serif);
 }
 
