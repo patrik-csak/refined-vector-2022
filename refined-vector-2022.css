@@ -32,6 +32,17 @@ body {
 	font-family: var(--font-serif);
 }
 
+.mw-body .mw-heading3,
+.mw-body h3,
+.mw-body .mw-heading4,
+.mw-body h4,
+.mw-body .mw-heading5,
+.mw-body h5,
+.mw-body .mw-heading6,
+.mw-body h6 {
+	font-family: var(--font-serif);
+}
+
 /* body font: serif */
 .mw-body p {
 	font-family: var(--font-serif);
