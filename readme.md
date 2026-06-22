@@ -32,6 +32,7 @@ Refinements for Wikipedia’s
 ## CSS
 
 <!-- docs CODE src="./refined-vector-2022.css" -->
+
 ```css
 :root {
 	/* tailwind 4.2 font stacks - https://tailwindcss.com/docs/font-family */
@@ -120,4 +121,5 @@ samp,
 
 /* /new selectors */
 ```
+
 <!-- /docs -->
