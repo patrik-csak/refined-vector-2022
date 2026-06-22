@@ -18,13 +18,15 @@ Refinements for Wikipedia’s
 
 ## Features
 
-### Fonts
-
-- More modern system font stacks for sans-serif and monospace fonts
-- System serif font for article body
-- Improved visual differentiation of inline monospaced text
+- Fonts
+	- More modern [system font stacks](https://tailwindcss.com/docs/font-family) for sans-serif and monospace fonts
+	- Serif font for article body
+	- Improved visual differentiation of inline monospaced text
+- Support Safari's 'show color in tab bar' feature
 
 #### Screenshots
+
+<!-- TODO: Add more screenshots -->
 
 <!-- prettier-ignore-start -->
 | Before | After |
@@ -55,6 +57,18 @@ Refinements for Wikipedia’s
 html,
 body {
 	font-family: var(--font-sans);
+}
+
+/*
+ * apply background color to body
+ *
+ * vector applies this to `.mw-page-container`
+ *
+ * applying it to `body` allows safari to use it as the tab bar color when
+ * safari's 'show color in tab bar' setting is enabled
+ */
+body {
+	background-color: var(--background-color-base);
 }
 
 /* heading font: serif */

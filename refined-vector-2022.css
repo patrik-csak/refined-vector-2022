@@ -17,6 +17,18 @@ body {
 	font-family: var(--font-sans);
 }
 
+/*
+ * apply background color to body
+ *
+ * vector applies this to `.mw-page-container`
+ *
+ * applying it to `body` allows safari to use it as the tab bar color when
+ * safari's 'show color in tab bar' setting is enabled
+ */
+body {
+	background-color: var(--background-color-base);
+}
+
 /* heading font: serif */
 .mw-body h1,
 .mw-body .mw-heading1,
