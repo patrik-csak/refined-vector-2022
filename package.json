@@ -11,20 +11,20 @@
   "type": "module",
   "scripts": {
     "docs": "md-magic --file '**/*.md'",
-    "format:check": "pnpm run prettier --check",
-    "format:fix": "pnpm run prettier --write",
-    "lint:check": "pnpm run '/^lint:check:.*/'",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:check": "concurrently npm:lint:check:*",
     "lint:check:eslint": "eslint",
-    "lint:check:stylelint": "pnpm run stylelint",
-    "lint:fix": "pnpm run '/^lint:fix:.*/'",
+    "lint:check:stylelint": "npm run stylelint",
+    "lint:fix": "concurrently npm:lint:fix:*",
     "lint:fix:eslint": "eslint --fix",
-    "lint:fix:stylelint": "pnpm run stylelint --fix",
-    "prettier": "prettier .",
-    "quality:check": "pnpm run '/^(format:check|lint:check)/'",
-    "quality:fix": "pnpm run '/^(format:fix|lint:fix)/'",
+    "lint:fix:stylelint": "npm run stylelint --fix",
+    "quality:check": "concurrently npm:format:check npm:lint:check",
+    "quality:fix": "npm run format:fix && npm run lint:fix",
     "stylelint": "stylelint '**/*.css'"
   },
   "devDependencies": {
+    "concurrently": "^10.0.3",
     "eslint": "^10.2.0",
     "eslint-plugin-package-json": "^0.91.1",
     "markdown-magic": "^4.8.0",
@@ -37,8 +37,11 @@
       "name": "node"
     },
     "packageManager": {
-      "name": "pnpm",
-      "version": "10"
+      "name": "npm",
+      "version": "^11.16"
     }
+  },
+  "allowScripts": {
+    "es5-ext": false
   }
 }
