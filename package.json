@@ -19,14 +19,16 @@
     "lint:fix": "concurrently npm:lint:fix:*",
     "lint:fix:eslint": "eslint --fix",
     "lint:fix:stylelint": "npm run stylelint --fix",
-    "quality:check": "concurrently npm:format:check npm:lint:check",
+    "quality:check": "concurrently npm:format:check npm:lint:check npm:unused:check",
     "quality:fix": "npm run format:fix && npm run lint:fix",
-    "stylelint": "stylelint '**/*.css'"
+    "stylelint": "stylelint '**/*.css'",
+    "unused:check": "knip"
   },
   "devDependencies": {
     "concurrently": "^10.0.3",
     "eslint": "^10.2.0",
     "eslint-plugin-package-json": "^0.91.1",
+    "knip": "^6.17.1",
     "markdown-magic": "^4.8.0",
     "prettier": "^3.8.1",
     "remark-cli": "^12.0.1",
