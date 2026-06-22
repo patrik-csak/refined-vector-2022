@@ -3,6 +3,26 @@
 Refinements for Wikipedia’s
 [Vector 2022 skin](https://en.wikipedia.org/wiki/Wikipedia:Vector_2022)
 
+## Features
+
+- Fonts
+  - More modern [system font stacks](https://tailwindcss.com/docs/font-family)
+    for sans-serif and monospace fonts
+  - Serif font for article body
+  - Improved visual differentiation of inline monospaced text
+- Support Safari’s ‘show color in tab bar’ feature
+
+<!-- TODO: Add more screenshots -->
+
+<!-- prettier-ignore-start -->
+
+| Before | After |
+|---|---|
+| <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-unrefined-light.png"><img src="screenshots/fonts-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-refined-light.png"><img src="screenshots/fonts-refined-light.png"></picture> |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-unrefined-light.png"><img src="screenshots/monospace-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-refined-light.png"><img src="screenshots/monospace-refined-light.png"></picture> |
+
+<!-- prettier-ignore-end -->
+
 ## Usage
 
 1. Log in to Wikipedia
@@ -25,28 +45,6 @@ Refinements for Wikipedia’s
 6. Follow the
    [Help: User style](https://en.wikipedia.org/wiki/Help:User_style#Cascading_Style_Sheets)
    instructions for saving the changes
-
-## Features
-
-- Fonts
-  - More modern [system font stacks](https://tailwindcss.com/docs/font-family)
-    for sans-serif and monospace fonts
-  - Serif font for article body
-  - Improved visual differentiation of inline monospaced text
-- Support Safari’s ‘show color in tab bar’ feature
-
-#### Screenshots
-
-<!-- TODO: Add more screenshots -->
-
-<!-- prettier-ignore-start -->
-
-| Before | After |
-|---|---|
-| <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-unrefined-light.png"><img src="screenshots/fonts-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-refined-light.png"><img src="screenshots/fonts-refined-light.png"></picture> |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-unrefined-light.png"><img src="screenshots/monospace-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-refined-light.png"><img src="screenshots/monospace-refined-light.png"></picture> |
-
-<!-- prettier-ignore-end -->
 
 ## CSS
 
