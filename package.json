@@ -10,7 +10,7 @@
   "author": "Patrik Csak <p@trikcsak.com> (https://patrikcsak.com)",
   "type": "module",
   "scripts": {
-    "docs": "md-magic --file '**/*.md'",
+    "docs": "md-magic --file readme.md && remark readme.md --output",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint:check": "concurrently npm:lint:check:*",
@@ -29,8 +29,11 @@
     "eslint-plugin-package-json": "^0.91.1",
     "markdown-magic": "^4.8.0",
     "prettier": "^3.8.1",
+    "remark-cli": "^12.0.1",
+    "remark-smartypants": "^3.0.2",
     "stylelint": "^17.6.0",
-    "stylelint-config-standard": "^40.0.0"
+    "stylelint-config-standard": "^40.0.0",
+    "unified": "^11.0.5"
   },
   "devEngines": {
     "runtime": {
@@ -42,6 +45,7 @@
     }
   },
   "allowScripts": {
-    "es5-ext": false
+    "es5-ext": false,
+    "fsevents": false
   }
 }

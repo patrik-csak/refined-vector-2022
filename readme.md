@@ -6,33 +6,46 @@ Refinements for Wikipedia’s
 ## Usage
 
 1. Log in to Wikipedia
-1. Go to [Preferences → Appearance](https://en.wikipedia.org/wiki/Special:Preferences#mw-prefsection-rendering)
-1. Make sure the **Vector (2022)** skin is active
-1. Choose which of your user styles you want to apply the refinements to
-	- Wikipedia only, desktop only: ['Skin → Vector 2022 (...**Custom CSS**...)'](https://en.wikipedia.org/wiki/Special:MyPage/vector-2022.css)
-	- Wikipedia only, desktop and mobile ['Shared CSS/JavaScript for all skins → **Custom CSS**'](https://en.wikipedia.org/wiki/Special:MyPage/common.css)
-	- Wikipedia and [all other Wikimedia projects](https://wikimediafoundation.org/what-we-do/wikimedia-projects/), e.g. Wiktionary, etc.: ['Shared CSS/JavaScript for all wikis → **Custom CSS**'](https://meta.wikimedia.org/wiki/Special:MyPage/global.css)
-	- See [Wikipedia's Help:User style](https://en.wikipedia.org/wiki/Help:User_style#Cascading_Style_Sheets) for more information
-1. Copy the [CSS](#css) and paste it into the editor
-1. Follow the [Help: User style](https://en.wikipedia.org/wiki/Help:User_style#Cascading_Style_Sheets) instructions for saving the changes
+2. Go to
+   [Preferences → Appearance](https://en.wikipedia.org/wiki/Special:Preferences#mw-prefsection-rendering)
+3. Make sure the **Vector (2022)** skin is active
+4. Choose which of your user styles you want to apply the refinements to
+   - Wikipedia only, desktop only:
+     [‘Skin → Vector 2022 (…**Custom CSS**…)’](https://en.wikipedia.org/wiki/Special:MyPage/vector-2022.css)
+   - Wikipedia only, desktop and mobile
+     [‘Shared CSS/JavaScript for all skins → **Custom CSS**’](https://en.wikipedia.org/wiki/Special:MyPage/common.css)
+   - Wikipedia and
+     [all other Wikimedia projects](https://wikimediafoundation.org/what-we-do/wikimedia-projects/),
+     e.g. Wiktionary, etc.:
+     [‘Shared CSS/JavaScript for all wikis → **Custom CSS**’](https://meta.wikimedia.org/wiki/Special:MyPage/global.css)
+   - See
+     [Wikipedia’s Help:User style](https://en.wikipedia.org/wiki/Help:User_style#Cascading_Style_Sheets)
+     for more information
+5. Copy the [CSS](#css) and paste it into the editor
+6. Follow the
+   [Help: User style](https://en.wikipedia.org/wiki/Help:User_style#Cascading_Style_Sheets)
+   instructions for saving the changes
 
 ## Features
 
 - Fonts
-	- More modern [system font stacks](https://tailwindcss.com/docs/font-family) for sans-serif and monospace fonts
-	- Serif font for article body
-	- Improved visual differentiation of inline monospaced text
-- Support Safari's 'show color in tab bar' feature
+  - More modern [system font stacks](https://tailwindcss.com/docs/font-family)
+    for sans-serif and monospace fonts
+  - Serif font for article body
+  - Improved visual differentiation of inline monospaced text
+- Support Safari’s ‘show color in tab bar’ feature
 
 #### Screenshots
 
 <!-- TODO: Add more screenshots -->
 
 <!-- prettier-ignore-start -->
+
 | Before | After |
 |---|---|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-unrefined-light.png"><img src="screenshots/fonts-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/fonts-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/fonts-refined-light.png"><img src="screenshots/fonts-refined-light.png"></picture> |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-unrefined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-unrefined-light.png"><img src="screenshots/monospace-unrefined-light.png"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/monospace-refined-dark.png"><source media="(prefers-color-scheme: light)" srcset="screenshots/monospace-refined-light.png"><img src="screenshots/monospace-refined-light.png"></picture> |
+
 <!-- prettier-ignore-end -->
 
 ## CSS
