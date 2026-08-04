@@ -1,14 +1,14 @@
-import {defineConfig} from 'eslint/config';
-import packageJson from 'eslint-plugin-package-json';
+import {defineConfig, globalIgnores} from 'eslint/config';
+import xo from 'eslint-config-xo';
 
 export default defineConfig([
-	packageJson.configs.recommended,
-	packageJson.configs.stylistic,
+	globalIgnores(['package-lock.json']),
+
+	...xo({prettier: 'compat'}),
+
 	{
 		rules: {
-			'package-json/require-exports': 'off',
-			'package-json/require-files': 'off',
-			'package-json/require-sideEffects': 'off',
+			'css/font-family-fallbacks': 'off',
 		},
 	},
 ]);

@@ -11,23 +11,18 @@
   "type": "module",
   "scripts": {
     "docs": "md-magic --file readme.md && remark readme.md --output",
-    "format:check": "prettier --check .",
-    "format:fix": "prettier --write .",
-    "lint:check": "concurrently npm:lint:check:*",
-    "lint:check:eslint": "eslint",
-    "lint:check:stylelint": "npm run stylelint",
-    "lint:fix": "concurrently npm:lint:fix:*",
-    "lint:fix:eslint": "eslint --fix",
-    "lint:fix:stylelint": "npm run stylelint --fix",
-    "quality:check": "concurrently npm:format:check npm:lint:check npm:unused:check",
+    "format:check": "npm run prettier -- --check",
+    "format:fix": "npm run prettier -- --write",
+    "lint:check": "eslint && npm run stylelint",
+    "lint:fix": "eslint --fix && npm run stylelint -- --fix",
+    "prettier": "prettier .",
+    "quality:check": "npm run format:check && npm run lint:check && knip",
     "quality:fix": "npm run format:fix && npm run lint:fix",
-    "stylelint": "stylelint '**/*.css'",
-    "unused:check": "knip"
+    "stylelint": "stylelint '**/*.css'"
   },
   "devDependencies": {
-    "concurrently": "^10.0.3",
     "eslint": "^10.2.0",
-    "eslint-plugin-package-json": "^0.91.1",
+    "eslint-config-xo": "^1.0.0",
     "knip": "^6.17.1",
     "markdown-magic": "^4.8.0",
     "prettier": "^3.8.1",
@@ -48,6 +43,7 @@
   },
   "allowScripts": {
     "es5-ext": false,
-    "fsevents": false
+    "fsevents": false,
+    "unrs-resolver": false
   }
 }

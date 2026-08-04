@@ -1,1 +1,2 @@
-package*.json
+**/*.png
+package-lock.json
