@@ -1,11 +1,15 @@
 {
 	"name": "@patrik-csak/refined-vector-2022",
 	"version": "0.0.0",
+	"private": true,
 	"description": "Refinements for Wikipedia's Vector 2022 skin",
 	"license": "MIT",
 	"repository": "github:patrik-csak/refined-vector-2022",
 	"author": "Patrik Csak <p@trikcsak.com> (https://patrikcsak.com)",
 	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
 	"devEngines": {
 		"runtime": {
 			"name": "node"
@@ -35,8 +39,7 @@
 		"remark-cli": "^12.0.1",
 		"remark-smartypants": "^3.0.2",
 		"stylelint": "^17.6.0",
-		"stylelint-config-standard": "^40.0.0",
-		"unified": "^11.0.5"
+		"stylelint-config-standard": "^40.0.0"
 	},
 	"allowScripts": {
 		"es5-ext": false,
