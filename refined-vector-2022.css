@@ -40,10 +40,7 @@ body {
 .content .mw-heading1,
 .content h1,
 .content .mw-heading2,
-.content h2 {
-	font-family: var(--font-serif);
-}
-
+.content h2,
 .mw-body .mw-heading3,
 .mw-body h3,
 .mw-body .mw-heading4,
@@ -63,7 +60,6 @@ body {
 /* monospace elements font: mono */
 pre,
 code,
-tt,
 kbd,
 samp,
 .mw-code,
